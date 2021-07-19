@@ -1,0 +1,123 @@
+<!DOCTYPEHTML>
+<html>
+<head>
+    <meta name="viewport" content="with-device-width, initial-scale=1.0">
+    <title>CatDev Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="header">
+        <nav>
+            <a href="main.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <a href="index.html">
+                            <button style="font-size:25px;">Home</button> 
+                    <a href="About.html">
+                        <button style="font-size:25px;">About</button> 
+                        </a>
+                    <a href="https://www.youtube.com/channel/UCNqKT0-3toPKg5ckxbNYrFQ">
+                        <button style="font-size:25px;">Youtube Channel</button> 
+                            </a>
+                    <a href="Contact.html">
+                                <button style="font-size:25px;">Contact</button> 
+                                    </a>
+                    <a href="https://scratch.mit.edu/users/Username_Username21/">
+                                 <button style="font-size:25px;">My Scratch Page</button> 
+                                    </a>   
+                    <a href="Snake.html">
+                                        <button style="font-size:25px;">Snake Game in html</html></button> 
+                                           </a>                   
+                </ul>
+            </div>
+        </nav>
+<div class="text-box">
+    <h1>Snake Game in html</h1>
+    <p>Just a random Snake Game i made some time ago in html(i followed a tutorial)</p>
+<embed>
+    <canvas id="gc" width="400" height="400"></canvas>
+    <script>
+    window.onload=function() {
+        canv=document.getElementById("gc");
+        ctx=canv.getContext("2d");
+        document.addEventListener("keydown",keyPush);
+        setInterval(game,1000/15);
+    }
+    px=py=10;
+    gs=tc=20;
+    ax=ay=15;
+    xv=yv=0;
+    trail=[];
+    tail = 5;
+    function game() {
+        px+=xv;
+        py+=yv;
+        if(px<0) {
+            px= tc-1;
+        }
+        if(px>tc-1) {
+            px= 0;
+        }
+        if(py<0) {
+            py= tc-1;
+        }
+        if(py>tc-1) {
+            py= 0;
+        }
+        ctx.fillStyle="black";
+        ctx.fillRect(0,0,canv.width,canv.height);
+     
+        ctx.fillStyle="lime";
+        for(var i=0;i<trail.length;i++) {
+            ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2);
+            if(trail[i].x==px && trail[i].y==py) {
+                tail = 5;
+            }
+        }
+        trail.push({x:px,y:py});
+        while(trail.length>tail) {
+        trail.shift();
+        }
+     
+        if(ax==px && ay==py) {
+            tail++;
+            ax=Math.floor(Math.random()*tc);
+            ay=Math.floor(Math.random()*tc);
+        }
+        ctx.fillStyle="red";
+        ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
+    }
+    function keyPush(evt) {
+        switch(evt.keyCode) {
+            case 37:
+                xv=-1;yv=0;
+                break;
+            case 38:
+                xv=0;yv=-1;
+                break;
+            case 39:
+                xv=1;yv=0;
+                break;
+            case 40:
+                xv=0;yv=1;
+                break;
+        }
+    }
+    </script>
+
+</embed>
+
+
+
+
+
+
+
+</div>
+</section>
+<p>Website made by Marinluvcat</p>
+</body>
+</html>
