@@ -1,8 +1,8 @@
-<!DOCTYPEHTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta name="viewport" content="with-device-width, initial-scale=1.0">
-    <title>CatDev Website</title>
+    <title>CatDev - Quiz</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,23 +30,38 @@
                                     </a>   
                     <a href="Snake.html">
                                         <button style="font-size:25px; background-color: #FFD700;">Snake Game in html</html></button> 
-                                           </a>                   
+                                           </a>    
                     <a href="quiz.html">
-                                        <button style="font-size:25px; background-color: #FFD700;">Quiz</html></button> 
-                                               </a>                   
+                                            <button style="font-size:25px; background-color: #FFD700;">Quiz</html></button> 
+                                                   </a>                 
                 </ul>
             </div>
         </nav>
-<div class="text-box">
-    <h1>Welcome to my website!</h1>
-    <p>Im Marinluvcat, i like animating, making games in scratch, drawing, playing games and more!</p>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
 
 
-
-
-
-</div>
-</section>
-<p style="background-color: #000000; color: #fff;">Website made by Marinluvcat</p>
+    <div id="container">
+        <div id="start">Start</button></div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="quiz.js"></script>
 </body>
 </html>
