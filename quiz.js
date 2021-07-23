@@ -24,7 +24,7 @@ let questions = [
         question : "How many subs do i have on my channel(maybe outdated lol)",
         imgSrc : "img/yt.png",
         choiceA : "36",
-        choiceB : "37",
+        choiceB : "38",
         choiceC : "34",
         correct : "B"
     },{
