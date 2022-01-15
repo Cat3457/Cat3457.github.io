@@ -21,13 +21,6 @@ let questions = [
         choiceC : "A plugin",
         correct : "A"
     },{
-        question : "How many subs do i have on my channel(maybe outdated lol)",
-        imgSrc : "img/yt.png",
-        choiceA : "52",
-        choiceB : "61",
-        choiceC : "59",
-        correct : "B"
-    },{
         question : "What does JS stand for?",
         imgSrc : "img/js.png",
         choiceA : "JuniorSchool",
