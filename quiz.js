@@ -23,9 +23,9 @@ let questions = [
     },{
         question : "How many subs do i have on my channel(maybe outdated lol)",
         imgSrc : "img/yt.png",
-        choiceA : "36",
-        choiceB : "37",
-        choiceC : "34",
+        choiceA : "52",
+        choiceB : "61",
+        choiceC : "59",
         correct : "B"
     },{
         question : "What does JS stand for?",
