@@ -23,7 +23,7 @@ let questions = [
     },{
         question : "What does JS stand for?",
         imgSrc : "img/js.png",
-        choiceA : "JuniorSchool",
+        choiceA : "JuniorHighSchool",
         choiceB : "idk",
         choiceC : "Javascript",
         correct : "C"
