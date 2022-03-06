@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPEHTML>
+<html>
 <head>
     <meta name="viewport" content="with-device-width, initial-scale=1.0">
-    <title>CatDev - Quiz</title>
-    <meta content="CatDevs Quiz Game" property="og:title" />
-    <meta content="Just a little quiz game in html" property="og:description" />
-    <meta content="cat3457.github.io/quiz.html" property="og:url" />
+    <title>CatDev Website</title>
+    <meta content="CatDev's Website" property="og:title" />
+    <meta content="Hello, this is my Website!" property="og:description" />
+    <meta content="cat3457.github.io/index.html" property="og:url" />
     <meta content="images/logo.png" property="og:image" />
     <meta content="#4272f5" data-react-helmet="true" name="theme-color" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 <section class="header">
@@ -20,7 +21,6 @@
             <a href="index.html"><img src="images/logo.png"></a>
             <div class="nav-links">
                 <ul>
-                    
                     <li><a style="font-size:25px;" href="index.html" >Home</a></li>
                     
                     <li><a style="font-size:25px;" href="About.html" >About</a></li>
@@ -30,40 +30,55 @@
                         <li><a style="font-size: 25px;" href="Snake.html">Snake Game</a><li>
 
                         <li><a style="font-size: 25px;" href="quiz.html">Quiz</a><li></li>
-                        
-
+                                                
                         <li><a style="font-size:25px;" href="https://www.youtube.com/channel/UCNqKT0-3toPKg5ckxbNYrFQ" >Youtube Channel</a></li>
 
                         <li><a style="font-size: 25px;" href="https://scratch.mit.edu/users/Username_Username21/">My Scratch Page</a><li>
-        
+                        
+                        <li><a style="font-size: 25px;" href="flopwiki.html">Login</a><li></li>
+                                                       
                 </ul>
             </div>
         </nav>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style2.css">
-</head>
-<body>
 
 
-    <div id="container">
-        <div id="start">Start</button></div>
-        <div id="quiz" style="display: none">
-            <div id="question"></div>
-            <div id="qImg"></div>
-            <div id="choices">
-                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
-                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
-                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
-            </div>
-            <div id="timer">
-                <div id="counter"></div>
-                <div id="btimeGauge"></div>
-                <div id="timeGauge"></div>
-            </div>
-            <div id="progress"></div>
-        </div>
-        <div id="scoreContainer" style="display: none"></div>
-    </div>
-    <script src="quiz.js"></script>
+
+<div class="text-box">
+
+        <form method="post" action="data.php">
+  
+            <div id="form_page">
+      
+
+                    <br />
+                    <div id="input_username" class="input">
+                        <input id="username" type="text" 
+                            Placeholder="Username" name="username" 
+                            required>
+                    </div>
+                    <div id="input_password" class="input">
+                        <input type="password" placeholder=
+                            "Password" name="password" required>
+                    </div>
+
+      
+                    <div class="id input">
+                        <input id="submit" type="submit" 
+                            name="submit" value="submit" 
+                            onclick="on_submit()">
+                    </div>
+                </div>
+        </form>
+
+        
+    
+    </form>
+    
+    
+
+
+</div>
+</section>
+<p style="background-color: #000000; color: #fff;">Website made by Marinluvcat</p>
 </body>
 </html>
