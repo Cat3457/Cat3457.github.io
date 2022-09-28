@@ -1,5 +1,5 @@
 body {
-    background-color: #b8c3ff;
+    background-color: #232434;
 }
 
 /* Text shit */
@@ -39,7 +39,6 @@ h1 {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-
 /* animations */
 
 @keyframes textanimation {
@@ -54,13 +53,14 @@ h1 {
     height: 60px;
     width: 1205px;
     border-radius: 10px;
-    background: #92a0f0;
-    box-shadow:  10px 10px 49px #9098c7,
-             -10px -10px 49px #e0eeff;
+    background: #4e5079;
+    box-shadow:  8px 8px 11px #161621;
     animation: textanimation 1s;
     list-style:none
 
 }
+
+
 
 
 /* */
@@ -68,9 +68,10 @@ h1 {
     position: relative;
     bottom: 149px;
     height: 60px;
-    background: #92a0f0;
-    box-shadow:  10px 10px 49px #9098c7,
-             -8px -8px 49px #e0eeff;
+    background: #4e5079;
+    box-shadow:  8px 8px 11px #161621;
+    
+    list-style:none;
     color: white;
     padding: 16px;
     font-size: 20px;
@@ -89,7 +90,7 @@ h1 {
     position: relative;
     bottom: 145px;
     display: none;
-    background: #92a0f0;
+    background: 4e5079;
     box-shadow:  10px 10px 49px #9098c7,
              -10px -10px 49px #e0eeff;
     min-width: 100px;
