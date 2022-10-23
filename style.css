@@ -19,7 +19,7 @@ text {
   color: white;
   opacity: 100%;
   font-family: 'Noto Sans JP', sans-serif;
-  animation: textanimation 2s;
+  animation: textanimation 1s;
 }
 
 li {
@@ -38,7 +38,7 @@ h1 {
     color: white;
     opacity: 100%;
     font-family: 'Noto Sans JP', sans-serif;
-    animation: textanimation 2s;
+    animation: textanimation 1s;
 }
 
 
@@ -59,7 +59,7 @@ h1 {
     background: #92a0f0;
     box-shadow:  10px 10px 49px #9098c7,
              -10px -10px 49px #e0eeff;
-    animation: textanimation 2s;
+    animation: textanimation 1s;
     list-style:none
 
 }
