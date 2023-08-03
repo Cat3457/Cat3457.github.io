@@ -18,7 +18,7 @@
 }
 
 .words {
-
+    align-items: center;
     border: 0px solid #ddd;
     height: 50px;
     line-height: 50px;
@@ -66,7 +66,6 @@ section{
     padding: 15px;
     font-size: larger;
     text-align: center;
-    
 }
 
 .card, .cardA, .cardS, .cardT {
@@ -88,7 +87,7 @@ section{
 
 
 .cardP {
-    height: 415px;
+    height: 445px;
     width: 1280px;
     background-color: rgb(23, 23, 23);
     border-radius: 15px;
